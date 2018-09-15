@@ -4,7 +4,7 @@ var http = require('http');
 var https = require('https');
 
 var port = 9800;
-var forecastIOKey = 'PUT_FORECAST_IO_API_KEY_HERE';
+var forecastIOKey = 'https://crossorigin.me/e3dd522c17b20d62e51cbc041d1878af';
 var cachedForecasts = {};
 
 var cityToLatLon = {
