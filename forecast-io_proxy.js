@@ -7,6 +7,10 @@ var port = 9800;
 var forecastIOKey = 'https://crossorigin.me/e3dd522c17b20d62e51cbc041d1878af';
 var cachedForecasts = {};
 
+app.saveSelectedCities = function () {
+    window.localforage.setItem('SelectedCities',app.selectedCities);
+};
+
 var injectedForecast = {
     key: 'newyork',
     label: 'New York, NY',
