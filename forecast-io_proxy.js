@@ -7,6 +7,33 @@ var port = 9800;
 var forecastIOKey = 'https://crossorigin.me/e3dd522c17b20d62e51cbc041d1878af';
 var cachedForecasts = {};
 
+var injectedForecast = {
+    key: 'newyork',
+    label: 'New York, NY',
+    currently: {
+      time: 1453489481,
+      summary: 'Clear',
+      icon: 'partly-cloudy-day',
+      temperature: 52.74,
+      apparentTemperature: 74.34,
+      precipProbability: 0.20,
+      humidity: 0.77,
+      windBearing: 125,
+      windSpeed: 1.52
+    },
+    daily: {
+      data: [
+        {icon: 'clear-day', temperatureMax: 55, temperatureMin: 34},
+        {icon: 'rain', temperatureMax: 55, temperatureMin: 34},
+        {icon: 'snow', temperatureMax: 55, temperatureMin: 34},
+        {icon: 'sleet', temperatureMax: 55, temperatureMin: 34},
+        {icon: 'fog', temperatureMax: 55, temperatureMin: 34},
+        {icon: 'wind', temperatureMax: 55, temperatureMin: 34},
+        {icon: 'partly-cloudy-day', temperatureMax: 55, temperatureMin: 34}
+      ]
+    }
+  };
+
 var cityToLatLon = {
   'austin': '30.3079823,-97.8938293',
   'boston': '42.313479,-71.1273685',
